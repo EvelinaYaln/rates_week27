@@ -1,0 +1,77 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: rgb(254, 248, 248);
+    color: rgb(159, 152, 152);
+}
+
+.card {
+    width: 230px;
+    margin-right: 5px;
+}
+
+#cardContainer {
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+
+.red {
+    background-color: rgb(143, 13, 13);
+}
+
+.green {
+    background-color: rgb(12, 118, 93);
+}
+
+.blue {
+    background-color: rgb(118, 202, 247);
+}
+
+.black {
+    background-color: rgb(49, 48, 48);
+}
+
+.heading {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cost {
+    padding: 30px;
+}
+
+.cost-num {
+    font-size: 40px;
+}
+
+.cost-word {
+    margin-bottom: 40px;
+    display: inline-block;  
+}
+
+.content-rates, .content-speed {
+    padding: 10px;
+}
+
+.content-rates {
+    background-color: rgb(234, 229, 229);
+}
+
+.content-speed {
+    background-color: rgb(254, 248, 248);
+}
+
+.color {
+    
+    color: white;
+}
+
+.selected {
+    padding: 15px;
+}

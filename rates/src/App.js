@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Card from'./components/Card.jsx';
+
+let cards = [{
+  "heading":"300",
+  "speed" : "10",
+  "color" : "blue",
+},{
+  "heading":"450",
+  "speed" : "50",
+  "color" : "green",
+},{
+  "heading":"550",
+  "speed" : "100",
+  "isSelected" : true,
+  "color" : "red",
+},{
+  "heading":"1000",
+    "speed" : "200",
+    "color" : "black",
+  },
+]
+  
+  
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {cards.map((card)=>
+        <Card heading={card.heading} speed={card.speed} isSelected={card.isSelected} color={card.color}></Card>
+      )}
     </div>
   );
 }
