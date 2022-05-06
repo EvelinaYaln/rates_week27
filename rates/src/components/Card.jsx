@@ -2,9 +2,7 @@ import { useState } from 'react';
 import './Card.css';
 
 function Card(props) {
-  const [pressed, setPressed] = useState (false);
   const handleChange = () => {
-    setPressed(!pressed);
     props.onClick(props.heading);
     
   }
