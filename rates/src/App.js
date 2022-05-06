@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import './App.css';
 import Card from'./components/Card.jsx';
 
@@ -24,10 +25,15 @@ let cards = [{
   
   
 function App() {
+  const [item, setCard] = useState();
+  const handleClick= (item)=> {
+    setCard(item);
+  }
   return (
     <div className="App">
        {cards.map((card)=>
-        <Card heading={card.heading} speed={card.speed} isSelected={card.isSelected} color={card.color}></Card>
+        <Card onClick={handleClick}
+        heading={card.heading} speed={card.speed} isSelected={card.heading===item} color={card.color}></Card>
       )}
     </div>
   );
